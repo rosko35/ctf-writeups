@@ -1,0 +1,16 @@
+[project]
+name = "ctf-writeups-tools"
+version = "0.1.0"
+description = "Helper scripts for the ctf-writeups repository"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+pythonpath = ["tools"]
+testpaths = ["tests"]
